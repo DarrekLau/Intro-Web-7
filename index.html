@@ -12,19 +12,26 @@
       crossorigin="anonymous"
     />
     <script src="index.js"></script>
+    <style>
+        h2{
+            color: red;
+        }
+    </style>
   </head>
   <body>
     <main>
-      <div class="container">
-        <h1>This is a button that take the input of your name.</h1>
-        <button type="button" class="btn btn-outline-danger btn-lg" onclick="yrName()">
-          Input your name !!
-        </button>
-      </div>
+        <div class="container">
       <div>
-          <hr>
-        <h2 id="theNameHere"></h2>
+        <h1>This is a button that take the input of your name.</h1>
+        <button class="btn btn-primary" type="button" onclick="yrName()">
+            <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+              Input your name !!
+        </button>
+        <hr>
       </div>
+          <h2 id="theNameHere"></h2>
+    </div>
+    </div>  
     </main>
   </body>
 </html>
